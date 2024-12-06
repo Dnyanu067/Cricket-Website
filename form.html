@@ -4,156 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <style>
-       .header {
-            background-color: blanchedalmond;
-            color: black;
-            padding: 20px;
-            display: flex;
-            align-items: center;
-        }
-        .header img {
-            height: 100px;
-            width: 100px;
-            margin-right: 20px;
-        }
-        .header h1 {
-            text-align: left;
-            margin: 0;
-            font-size: 36px;
-            font-family: 'Times New Roman', Times, serif;
-        }
-      img {
-        float: left;
-        height: 95px;
-        width: 95px;
-      }
-      .navbar {
-        background-color: darkcyan;
-        overflow: hidden;
-        font-size: 25px;
-      }
-      .navbar a {
-        color: black;
-        text-decoration: none;
-        padding: 10px 30px;
-        float: left;
-        display: block;
-        text-align: center;
-        font-family: 'Times New Roman', Times, serif;
-      }
-      .navbar a:hover {
-        background-color: blueviolet;
-        color: wheat;
-      }
-      .container {
-            width: 50%;
-            margin: 50px auto;
-            background: white;
-            padding: 20px;
-            box-shadow: 0 0 10px black;
-        }
-        body {
-            font-family: Arial, sans-serif;
-            background-color: lightgreen;
-            margin: 0;
-            padding: 0;
-        }
-        .container {
-            width: 50%;
-            margin: 50px auto;
-            background: whitesmoke;
-            padding: 20px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
-        h2 {
-            text-align: center;
-            color: lightgreen;
-        }
-        label {
-            display: block;
-            margin-top: 15px;
-            font-weight: bold;
-        }
-        input, select, textarea, button {
-            width: 100%;
-            padding: 10px;
-            margin-top: 5px;
-            border: 1px solid #ddd;
-            border-radius: 5px;
-        }
-        button {
-            background-color: darkgreen;
-            color: white;
-            font-size: 16px;
-            cursor: pointer;
-            margin-top: 15px;
-        }
-        button:hover {
-            background-color: darkgreen;
-        }
-    </style>
-    
+    <link rel="stylesheet" href="form.css">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="form.js"></script>
+
 </head>
 <body>
-    <script>
-    $(document).ready(function() {
-        $('#name, #email, #phone, #match, #tickets, #comments').mouseenter(function() {
-            $(this).css('background-color', 'lightgreen');
-        });
-        $('#name, #email, #phone, #match, #tickets, #comments').mouseleave(function() {
-            $(this).css('background-color', '');
-        });
-        $('#name').blur(function() { 
-            var value = $('#name').val();
-            $('#name').val(value.toUpperCase()); 
-        });
     
-        $('h1').mouseenter(function() {
-            $('h1').text('Welcome to Ticket booking');
-        });
-        $('h1').mouseleave(function() {
-            $('h1').text('TEST CHAMPIONS');
-        });
-    
-        $('#p1').click(function() {
-            $(this).text('No eatables, drinks, liquids, bottles, cans, tins, bags, lighters, matches and flammable items, illegal or hazardous substances are allowed inside the venue and the seating area (“Prohibited Items”). Ticket holders’ belongings will be searched on entry to the event. If ticket holder elects not to consent to such searches, and/or are found in possession of Prohibited Items, they may be denied entry to the Event without refund or other compensation.');
-        });
-    
-        $('#p1').dblclick(function() {
-            $(this).text('Terms & Conditions');
-        });
-    
-        $('#cal').click(function(event) {
-            event.preventDefault(); // Prevent form submission
-    
-            var fname = $('#name').val();
-            var eemail = $('#email').val();
-            var pphone = $('#phone').val();
-            var mmatch = $('#match').val();
-            var ttickets = parseInt($('#tickets').val());
-            var ccomments = $('#comments').val();
-    
-            $("#p2").html(
-                "Full Name: " + fname + "<br>" +
-                "Email: " + eemail + "<br>" +
-                "Phone: " + pphone + "<br>" +
-                "Match: " + mmatch + "<br>" +
-                "Number of Tickets: " + ttickets + "<br>" +
-                "Comments: " + ccomments
-            );
-        });
-    });
-           
-    </script>
     <div class="header">
         <img src="wtc2021.jpg" alt="wtc img" />
         <h1>TEST CHAMPIONS</h1>
     </div>
   
     <div class="navbar">
-        <a href="cssstatic.html">home</a>
+        <a href="HOME.html">home</a>
         <a href="schedule.html">Shedule</a>
         <a href="form.html">Ticket Booking</a>
     </div>
