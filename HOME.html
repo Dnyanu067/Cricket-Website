@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WTC champon ship</title>
+    <script type="text/javascript" src="jquery.js"></script>
+    <style>
+      
+      body{
+        margin: 0%;
+        padding: 0%;
+      }
+      .header {
+            background-color: blanchedalmond;
+            color: black;
+            padding: 20px;
+            display: flex;
+            align-items: center;
+        }
+        .header img {
+            height: 100px;
+            width: 100px;
+            margin-right: 20px;
+        }
+        .header h1 {
+            text-align: left;
+            margin: 0;
+            font-size: 36px;
+        }
+      /* .header {
+            background-color: blanchedalmond;
+            color: black;
+            padding: 20px;
+            display: flex;
+            align-items: center;
+        }
+        .header img {
+            height: 100px;
+            width: 100px;
+            margin-right: 20px;
+        }
+        .header h1 {
+            text-align: left;
+            margin: 0;
+            font-size: 36px;
+        } */
+      /* .header {
+        background-color: blanchedalmond;
+        color: black;
+        padding: 20px;
+      }
+      .header h1 {
+        text-align: center;
+        float: none;
+      } */
+      img {
+        float: left;
+        height: 95px;
+        width: 95px;
+      }
+      .navbar {
+        background-color: darkcyan;
+        overflow: hidden;
+        font-size: 25px;
+      }
+      .navbar a {
+        color: black;
+        text-decoration: none;
+        padding: 10px 30px;
+        float: left;
+        display: block;
+        text-align: center;
+      }
+      .navbar a:hover {
+        background-color: blueviolet;
+        color: wheat;
+      }
+      .list {
+        height: 215px;
+        width: 24.5%;
+        background-color: lightgreen;
+        float: left;
+        display: block;
+        text-align: center;
+      }
+      .list a {
+        text-decoration: none;
+        display: block;
+        float: left;
+        color: darkblue;
+      }
+      .list a:hover {
+        background-color: gainsboro;
+        color: black;
+      }
+      #div2 {
+        width: 75%;
+        margin-left: 3px;
+        margin-top: 3px;
+        text-align: left;
+      }
+      
+       .imge img{
+       
+        border-radius: 8px; 
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      }
+    </style>
+    <script type="text/javascript">
+      function change1() {
+        document.getElementById("div2").innerHTML =
+          "The Border-Gavaskar Trophy (BGT) is an International Test trophy played between India and Australia. The series is named after distinguished former captains, Australia's Allan Border and India's Sunil Gavaskar. It is played via Test series scheduled using International Cricket Council's Future Tours Programme. The winner of a Test series wins the trophy. If a series is drawn, the country holding the trophy retains it. ";
+      }
+      function change2() {
+        document.getElementById("div2").innerHTML ="The 2021-2023 ICC World Test Championship was the second edition of the ICC World Test Championship of Test cricket.It started on 4 August 2021 and finished with the Final on 7–11 June 2023 at The Oval, London, played between Australia and India.The five-match Pataudi Trophy between England and India, started 4 August 2021, started the second cycle of the World Test Championship."
+      }
+      function change3() {
+        document.getElementById("div2").innerHTML="India have retained the ICC Test Championship Mace and won the purse of $ 1 million for a third year running after finishing at the top of the MRF Tyres ICC Test Team Rankings on the cut-off date of 1 April, while New Zealand have ensured second place"
+      }
+      function change4() {
+        document.getElementById("div2").innerHTML="The India cricket team toured England between July and September 2018 to play five Tests, three One Day International (ODIs) and three Twenty20 International (T20Is) matches.[1][2][3] India also played a three-day match against Essex in July at Chelmsford.India won the T20I series 2–1.[5] In the second T20I, MS Dhoni played in his 500th international cricket match.[6] He became the ninth player overall, and the third Indian, to reach this milestone"
+      }
+      function changestyle() {
+        document.getElementById("div2").style.fontSize = "30px";
+        document.getElementById("div2").style.color = "";
+      }
+      function resetStyle() {
+        document.getElementById("div2").style.fontSize = "25px";
+        document.getElementById("div2").style.color = "black";
+      }
+    </script>
+  </head>
+  <body>
+    <div class="header">
+      <img src="wtc2021.jpg" alt="wtc img" />
+      <h1>TEST CHAMPIONS</h1>
+    </div>
+
+    <div class="navbar">
+      <a href="cssstatic.html">home</a>
+      <a href="schedule.html">Shedule</a>
+      
+      <a href="form.html">Ticket Booking</a>
+    </div>
+
+    <div class="imge">
+      <img src="bgt.jpg" alt="wtc" style="height: 350px; width: 375px" />
+      <img src="virat14.jpg" alt="wtc" style="height: 350px; width: 375px" />
+      <img src="m1.jpg" alt="wtc" style="height: 350px; width: 375px" />
+      <img src="engtest.jpg" alt="wtc" style="height: 350px; width: 375px" />
+    </div>
+
+    <div class="list">
+      <h2>
+        <b><u>test Championship</u></b>
+      </h2>
+      <ul>
+        <b
+          ><li><a href="#" onclick="change1()">BGT</a></li></b
+        >
+        <b
+          ><li><a href="#" onclick="change2()">WTC2021</a></li></b
+        >
+        <b
+          ><li><a href="#" onclick="change3()">Testmess2018</a></li></b
+        >
+        <b
+          ><li><a href="#" onclick="change4()">Ind Vs Eng 5th Test Match</a></li></b
+        >
+      </ul>
+    </div>
+    <div id="div2" class="list" onmouseenter="changestyle()" onmouseleave="resetStyle()">Test Champions</div>
+  </body>
+</html>
